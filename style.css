@@ -1,0 +1,66 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Times New Roman';
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+.form-box{
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid black;
+    outline: 2px solid gray;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th{
+    background-color: lightgray;
+}
+td, th{
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+input[type="submit"],
+input[type="reset"]{
+    width: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.terms{
+    display: block;
+}
+.terms input[type="checkbox"]{
+    width: auto;
+    display: inline;
+    margin-right: 5px;
+}
+.Gender input[type="radio"]{
+    width: auto;
+    display: inline;
+    margin-right: 5px;
+}
+.label-text{
+    color: red;
+    font-weight: bold;
+}
+.label-text1{
+    color: green;
+    font-weight: bold;
+}
