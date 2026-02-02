@@ -69,6 +69,7 @@ console.log(Math.max(10, 20));*/
 n.toString();
 console.log(typeof n);*/
 
-let isValid = true;
-console.log(typeof isValid);
+/*let isValid = true;
+console.log(typeof isValid);*/
 
+window.alert("Hello");
