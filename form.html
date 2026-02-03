@@ -6,27 +6,32 @@
     </head>
 
     <body>
+        <script src="bom.js"></script>
+        <button onclick="goBackPage()">Go Back</button>
         <h1>
             Student Feedback Form
         </h1>
         <hr>
-        <form action="success.html" method="get">
+        <form action="success.html" method="get" onsubmit="return validateForm()">
             <div class="form-box">
                 <p>
                     <span class="label-text">Name:</span>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" id="name" placeholder="Enter your name">
                 </p>
-                <p>
+                <p class="password-box">
                     <span class="label-text1">Password:</span>
-                    <input type="password" placeholder="Enter your password">
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter your password">
+                        <span class="eye" onclick="togglePassword()">👁</span>
+                    </div>
                 </p>
                 <p>
-                    Email:<input type="email" placeholder="Enter your email">
+                    Email:<input type="email" id="email" placeholder="Enter your email">
                 </p>
                 <p class="Gender">
                     Gender:<br>
-                    <label><input type="radio" name="Gender">Male</label><br>
-                    <label><input type="radio" name="Gender">Female</label><br>
+                    <label><input type="radio" name="Gender" value="Male">Male</label><br>
+                    <label><input type="radio" name="Gender" value="Female">Female</label><br>
                 </p>
                 <p>
                     Course:<br>
@@ -38,7 +43,7 @@
                 </p>
                 <p>
                     Feedback:<br>
-                    <textarea rows="5" cols="30" placeholder="Enter your feedback here"></textarea>
+                    <textarea id="feedback" rows="5" cols="30" placeholder="Enter your feedback here"></textarea>
                 </p>
                 <table border="2">
                 <tr>
@@ -54,7 +59,7 @@
                 </tr>
                 </table><br>
                 <p class="terms">
-                    <input type="checkbox">
+                    <input type="checkbox" id="terms">
                     I agree to the terms and conditions
                 </p>
                 <p>
