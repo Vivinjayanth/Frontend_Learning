@@ -73,3 +73,6 @@ console.log(typeof n);*/
 console.log(typeof isValid);*/
 
 window.alert("Hello");
+let isValid = true;
+console.log(typeof isValid);
+
